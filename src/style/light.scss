@@ -1,0 +1,345 @@
+@import '../global.scss';
+
+.app.light {
+    background-color: $lightBackground;
+
+    .navbar {
+        background-color: $lightBackground;
+
+        .left {
+            .logo {
+                span {
+                    color: crimson;
+                }
+            }
+
+            .hamburger {
+
+                .menu-icon {
+                    span {
+
+                        background-color: crimson;
+                    }
+
+                    &.active {
+                        color: $lightTextColor;
+
+                        span {
+                            &:first-child {
+                                background-color: $lightTextColor;
+                            }
+
+                            &:last-child {
+                                background-color: $lightTextColor;
+                            }
+                        }
+
+                    }
+
+
+                }
+
+
+            }
+        }
+
+        .right {
+            .nav-menu {
+                .darkmode {
+                    color: $lightTextColor;
+                    @include tablet{
+                        color: $dimColor;
+                    }
+                }
+
+                .nav-item {
+                    a {
+                        color: $lightTextColor;
+
+                        &:hover {
+                            color: crimson;
+                        }
+
+                        @include tablet{
+                            color: $dimColor;
+                        }
+                    }
+                }
+
+                .navBtn {
+                    color: crimson;
+                    border: 1px solid crimson;
+                    @include tablet{
+                        color: $dimColor;
+                        border: 1px solid $dimColor;
+                    }
+                }
+            }
+            .nav-menu.active {
+                @include tablet {
+                    background: rgba(51,39,42, 0.98);
+                }
+
+            }
+        }
+
+    }
+
+    ////INTRO
+    .intro {
+        .left {
+
+            a {
+                color: inherit;
+
+                .headerIcon {
+                    color: crimson;
+                }
+            }
+
+        }
+
+        .right {
+
+            p {
+                color: crimson;
+            }
+
+            h1 {
+                color: $lightTextColor;
+            }
+
+            h2 {
+                color: $lightTextColor;
+            }
+
+            .bottom {
+                span {
+                    color: $lightTextColor;
+                }
+
+            }
+
+            .contactBtn {
+                color: crimson;
+                background-color: $lightBackground;
+                border: 1px solid crimson;
+            }
+
+        }
+
+    }
+
+    //////ABOUT
+    .about {
+        .left {
+            a {
+                .headerIcon {
+                    color: crimson;
+                }
+            }
+
+        }
+
+        .right {
+            .top {
+                h1 {
+                    color: $lightTextColor;
+                }
+
+                hr {
+                    height: 0.5px;
+                    background-color: lightgray;
+                }
+
+            }
+
+            .bottom {
+                .left {
+                    color: $lightTextColor;
+
+                    .leftText {
+                        span {
+                            font-size: 16px;
+                            letter-spacing: 0.5px;
+                        }
+
+                        a {
+                            color: crimson;
+                        }
+
+                        .leftTextList {
+                            ul {
+                                li {
+                                    .icon {
+                                        font-size: 11px;
+                                        color: crimson;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .right {
+
+                    .imgWrapper {
+                        background-color: rgba(220, 20, 60, 0.1);
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    /////PORTFOLIO
+    .portfolio {
+        .left {
+            a {
+                .headerIcon {
+                    color: crimson;
+                }
+            }
+
+        }
+
+        .right {
+            .top {
+                h1 {
+                    color: $lightTextColor;
+                }
+
+                hr {
+                    height: 0.5px;
+                    background-color: lightgray;
+                }
+            }
+
+            .bottom {
+                ul {
+                    li {
+                        color: $lightTextColor;
+
+                        &.active {
+                            color: $lightTextColor;
+                            background-color: rgba(220, 20, 60, 0.2);
+                        }
+                    }
+                }
+
+                .wrapper {
+                    .item {
+                        color: crimson;
+                        border: 0.2px solid rgba(220, 20, 60, 0.2);
+
+                        h3 {
+                            color: $lightTextColor;
+                        }
+
+                        &:hover {
+                            background-color: rgba(220, 20, 60, 0.2);
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .portfolioList {
+        &.active {
+            background-color: $lightTextColor;
+            color: white;
+        }
+    }
+
+    /////CONTACT
+    .contact {
+        .left {
+            a {
+                .headerIcon {
+                    color: crimson;
+                }
+            }
+
+        }
+
+        .right {
+            .top {
+                h1 {
+                    color: $lightTextColor;
+                }
+
+                hr {
+                    height: 0.5px;
+                    background-color: lightgray;
+                }
+            }
+
+            form {
+                .formSec1 {
+                    input {
+                        color: $lightTextColor;
+                        border: 0.8px solid $lightTextColor;
+                        background-color: $lightBackground;
+                    }
+
+                    input::placeholder {
+                        color: #8892b0;
+                    }
+
+                    input:focus {
+                        color: $lightTextColor;
+                    }
+
+                    input:-webkit-autofill,
+                    input:-webkit-autofill:hover,
+                    input:-webkit-autofill:focus,
+                    input:-webkit-autofill:active {
+                        -webkit-text-fill-color: $lightTextColor;
+                        -webkit-box-shadow: 0 0 0 30px $lightTextColor inset !important;
+                    }
+                }
+
+                textarea {
+                    color: $lightTextColor;
+                    border: 0.8px solid $lightTextColor;
+                    background-color: $lightBackground;
+                }
+                textarea::placeholder {
+                    color: #8892b0;
+                }
+                .contactBtn {
+                    color: $lightTextColor;
+                    background-color: $lightBackground;
+                    border: 0.5px solid crimson;
+                }
+
+                span {
+                    color: $lightTextColor;
+                }
+            }
+
+            .footer {
+                hr {
+                    height: 0.5px;
+                    background-color: lightgray;
+                }
+                span {
+                    color: $lightTextColor;
+                  
+                }
+                .copyright{
+                    color: $lightTextColor;
+                }
+            }
+        }
+    }
+
+
+
+}

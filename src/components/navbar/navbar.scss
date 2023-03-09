@@ -1,0 +1,256 @@
+@import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+
+.navbar {
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    position: fixed;
+    font-family: 'Oregano', cursive;
+
+    @include large {
+        padding: 10px 30px;
+    }
+
+    @include mobile {
+        padding: 0px 10px;
+    }
+
+    .wrapper {
+        height: 100%;
+        padding: 0px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include large {
+            padding: 0px 20px;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                display: flex;
+                color: inherit;
+                align-items: center;
+                text-decoration: none;
+
+                span {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: $darkHighlight;
+                    padding: 0px 2px;
+                    text-decoration: none;
+                    letter-spacing: -1px;
+                    font-family: 'Oregano', cursive;
+                    @include phone{
+                        font-size: 35px;
+                        letter-spacing: -2.1px;
+                    }
+
+                }
+
+            }
+
+            .hamburger {
+                display: none;
+
+                @include tablet {
+                    right: 30px;
+                    display: block;
+                    position: absolute;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .menu-icon {
+                        width: 35px;
+                        height: 28px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+            
+                        @include mobile{
+                            height: 25px;
+                        }
+
+                        span {
+                            width: 100%;
+                            height: 4px;
+                            border-radius: 3px;
+                            transform-origin: left;
+                            transition: all 0.5s ease;
+                            background-color: $highlight;
+                        }
+
+                        &.active {
+                            color: #FFFFFF;
+
+                            span {
+                                &:first-child {
+                                    background-color: #FFFFFF;
+                                    transform: rotate(45deg);
+                                }
+
+                                &:nth-child(2) {
+                                    transform: translate(-6.1rem, -8ex);
+                                }
+
+                                &:last-child {
+                                    transform: rotate(-45deg);
+                                    background-color: #FFFFFF;
+                                }
+                            }
+
+                        }
+
+
+                    }
+
+                }
+            }
+
+        }
+
+        .right {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: flex-end;
+
+            .nav-menu {
+                gap: 20px;
+                height: 100%;
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: space-between;
+
+                @include large {
+                    gap: 0px;
+                }
+
+                @include tablet {
+                    gap:  20px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    position: absolute;
+                    top: 70px;
+                    left: -100%;
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                    justify-content: center;
+                   
+                }
+
+                .darkmode{
+                    display: flex;
+                    margin-top: 3px;
+                    color: $dimColor;
+                    align-items: center;
+                    @include tablet{
+                        font-size: 22px;
+                    }
+                }
+
+                .nav-item {
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-bottom: 2px solid transparent;
+
+                    @include tablet {
+                        display: flex;
+                        align-items: center;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+
+                    a {
+                        width: 100%;
+                        display: flex;
+                        color: inherit;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $dimColor;
+                        &:hover {
+                            color: $darkHighlight; 
+                        }
+                        @include tablet{
+                            font-size: 22px;
+                        }
+
+                        .nav-links {
+                            display: flex;
+                            color: $darkHighlight;
+                            align-items: center;
+                            text-decoration: none;
+                            height: 100%;
+                            @include tablet {
+                                width: 100%;
+                                padding: 10px;
+                                text-align: center;
+                                flex-direction: column;
+                                color: $mainColor;
+                                &:hover{
+                                    color: $lightTextColor;
+                                }
+                            }
+
+                        }
+
+                        .activated {
+                            color: $darkHighlight;
+                        }
+
+                    }
+
+                }
+
+
+                .navBtn {
+                    cursor: pointer;
+                    gap: 3px;
+                    font-size: 16px;
+                    display: flex;
+                    padding: 12px 20px;
+                    align-items: center;
+                    letter-spacing: 0.6px;
+                    text-decoration: none;
+                    color: $darkHighlight;
+                    border-radius: 3px;
+                    border: 1px solid $darkHighlight;
+
+                    @include tablet {
+                        align-self: flex-start;
+                        margin-bottom: 40px;
+                        color: $mainColor;
+                        border: 1px solid $mainColor;
+                    }
+                }
+
+
+            }
+
+            .nav-menu.active {
+                @include tablet {
+                    left: 0;
+                    opacity: 1;
+                    z-index: 1;
+                    position: fixed;
+                    background: rgba(25,40,65, 0.98);
+                }
+
+            }
+
+
+        }
+    }
+
+}

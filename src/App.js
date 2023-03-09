@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.scss';
+import './style/light.scss';
+import Navbar from '../src/components/navbar/Navbar';
+import Intro from './components/intro/Intro';
+import About from './components/aboutme/About';
+import Portfolio from './components/myprojects/Portfolio';
+import Contact from './components/contact/Contact';
+import { useContext } from 'react';
+import { DarkModeContext } from './context/darkModeContext';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const { darkMode } = useContext(DarkModeContext);
+
+
+    return (
+        <div  className={darkMode ? "app" : "app light"}>
+            <Navbar />
+            <div className='container' id="container">
+                <Intro />
+                <About />
+                <Portfolio />
+                <Contact fffff/>
+            </div>
+        </div>
+    );
 }
 
 export default App;

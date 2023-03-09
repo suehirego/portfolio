@@ -1,0 +1,200 @@
+@import "../../global.scss";
+
+
+.about {
+    gap: 25px;
+    display: flex;
+    padding: 0px 60px;
+    align-items: center;
+    justify-content: center;
+    @include large{
+        gap: 20px;
+        padding: 0px 40px;
+    }
+    @include tablet{
+        min-height: 130vh;
+    }
+    @include mobile{
+        min-height: 150vh;
+        padding: 0px 25px;
+    }
+   
+    .left{
+        flex: 0.4;
+        gap: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @include tablet{
+            display: none;
+        }
+        
+        a{
+            color: inherit;
+            margin-bottom: 10px;
+
+            .headerIcon{
+                font-size: 20px;
+                color: $darkHighlight;
+            }
+        }
+
+    }
+
+    .right{
+        flex: 8;
+        display: flex;
+        padding: 0 114px;
+        flex-direction: column;
+        @include large{
+            padding: 0px 10px;
+        }
+        @include phone{
+            padding: 0px 0px;
+        }
+
+        .top {
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+    
+            h1 {
+                font-size: 35px;
+                letter-spacing: 0.5px;
+                color: $dimColor;
+                @include large{
+                    font-size: 25px;
+                }
+            }
+    
+            hr {
+                border: none;
+                height: 1px;
+                background-color: #333; 
+            }
+
+        }
+    
+        .bottom {
+            display: flex;
+
+            @include large{
+                justify-content: space-between;
+            }
+            @include tablet{
+                gap: 50px;
+                flex-direction: column;
+            }
+            @include phone{
+                gap: 80px;
+                flex-direction: column;
+            }
+
+
+            .left {
+                flex: 0.8;
+                gap: 30px;
+                display: flex;
+                color: $dimTextColor;
+                padding: 10px 0px;
+                align-items: center;
+                flex-direction: column;
+                @include large{
+                    gap: 20px;
+                    flex: 0.7;
+                }
+                @include tablet{
+                    align-items: center;
+                }
+               
+    
+                .leftText {
+                    line-height: 25px;
+                    @include large{
+                        line-height: 22px;
+                    }
+    
+                    span {
+                        font-size: 16px;
+                        letter-spacing: 0.5px;
+                        @include large{
+                            font-size: 15px;
+                        }
+                    }
+    
+                    a {
+                        padding: 0px 3px;
+                        color: $darkHighlight;
+                        text-decoration: none;
+                    }
+    
+                    .leftTextList {
+                        margin-top: 20px;
+                        gap: 80px;
+                        display: flex;
+                        @include phone{
+                            gap: 50px;
+                        }
+    
+                        ul {
+                            gap: 10px;
+                            display: flex;
+                            flex-direction: column;
+    
+                            li {
+                                gap: 10px;
+                                display: flex;
+                                font-size: 14px;
+                                align-items: center;
+    
+                                .icon {
+                                    font-size: 11px;
+                                    color: $darkHighlight;
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+    
+            .right {
+                flex: 0.2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include large{
+                    flex: 0.45;
+                }
+               
+                    .imgWrapper {
+                        width: 250px;
+                        height: 350px;
+                        display: flex;
+                        margin-left: 50px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 30px;
+                        background-color: rgba(100,255,218, 0.3);
+                        @include tablet{
+                            margin-left: 0px;
+                            width: 280px;
+                        height: 400px;
+                        }
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+              
+            }
+    
+        }
+    }
+
+   
+}

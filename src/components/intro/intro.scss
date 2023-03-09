@@ -1,0 +1,147 @@
+@import "../../global.scss";
+
+.intro{
+    gap: 10px;
+    display: flex;
+    padding: 0px 60px;
+    align-items: center;
+    justify-content: center;
+   
+    @include large{
+        padding: 0px 40px;
+    }
+    @include mobile{
+        padding: 0px 30px;
+    }
+     @include phone{
+         max-height: 70vh;
+         padding: 0px 20px;
+     }
+   
+    .left{
+        flex: 0.4;
+        gap: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        @include tablet{
+            display: none;
+        }
+
+        a{
+            color: inherit;
+            margin-bottom: 10px;
+
+            .headerIcon{
+                font-size: 20px;
+                color: $darkHighlight;
+            }
+        }
+
+    }
+    .right{
+        flex: 8;
+        gap: 10px;
+        display: flex;
+        padding: 0px 50px;
+        flex-direction: column;
+        @include tablet{
+            padding: 0px 20px;
+        }
+        @include tablet{
+            padding: 0px 0px;
+            width: 100%;
+        }
+        @include phone{
+            padding: 0px 10px;
+        }
+        
+        p{
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            color: $darkHighlight;
+            font-weight: 300;
+        }
+    
+        h1{
+             font-size: 75px;
+            color: $mainColor;
+            @include large{
+                font-size: 60px;
+            }
+            @include mobile{
+                font-size: 42px;
+            }
+        }
+    
+        h2{
+            font-size: 85px;
+            color: $dimTextColor;
+            letter-spacing: 0.5px;
+            @include large{
+                font-size: 67px;
+            }
+            @include mobile{
+                font-size: 42px;
+            }
+        }
+        
+        .bottom{
+            gap: 0px;
+            display: flex;
+            align-items: center;
+
+            span{
+                color: $dimTextColor;
+                letter-spacing: 1px;
+                margin-left: 10px;
+            }
+            @include mobile{
+                font-size: 17px;
+            }
+            
+            .typedText{
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: -5px;
+                @include tablet{
+                    font-size: 15;
+                }
+            }
+            @include tablet{
+                .typedText{
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-left: -5px;
+                
+                }
+            }
+        
+        }
+
+        .contactBtn {
+            width: 180px;
+            padding: 15px 20px;
+            font-size: 14px;
+            margin-top: 40px;
+            margin-left: 15px;
+            cursor: pointer;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-decoration: none;
+            align-items: center;
+            border-radius: 3px;
+            justify-content: center;
+            color: $darkHighlight;
+            background-color: $mainDark;
+            border: 0.5px solid $darkHighlight;
+            @include phone{
+                font-size: 18px;
+            }
+        }
+    
+    }
+    
+}

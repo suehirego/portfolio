@@ -1,0 +1,46 @@
+@import "./global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    height: 100vh;
+    background-color: $mainDark;
+
+    .container {
+        top: 70px;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        height: calc(100vh - 70px);
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none; //4firefox
+        font-family: 'Roboto', sans-serif;
+
+        >* {
+            width: 100vw;
+            margin: 40px 0px;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+
+            @include mobile{
+                scroll-snap-type:none;
+            }
+        } 
+    }
+
+    @include phone{
+        scroll-snap-type: none;
+    }
+
+}
+
+
