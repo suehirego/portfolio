@@ -10,10 +10,6 @@ const Contact = () => {
 
     const form = useRef();
     const [message, setMessage] = useState(false);
-    const SERID = process.env.REACT_APP_YOUR_SERVICE_ID;
-    const TEMPID = process.env.REACT_APP_YOUR_TEMPLATE_ID;
-    const KEY = process.env.REACT_APP_YOUR_PUBLIC_KEY;
-
 
     const sendEmail = (e) => {
         e.preventDefault();
