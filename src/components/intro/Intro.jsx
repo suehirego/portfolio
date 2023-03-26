@@ -3,7 +3,7 @@ import './intro.scss';
 import { FiGithub } from 'react-icons/fi';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { RxTwitterLogo } from 'react-icons/rx';
-import Typed from 'react-typed';
+
 
 const Intro = () => {
    return (
@@ -39,25 +39,9 @@ const Intro = () => {
             <h1>Susan Hirego,</h1>
             <h2>I am a Full-Stack Software Developer.</h2>
 
-            <div className="bottom">
-
-               <span>When offline; </span>
-               <Typed
-                  className="typedText"
-                  strings={[
-                     "I'm a Girl Mom,",
-                     " a Book Collector,",
-                     "a Travel Enthusiast,",
-                     "and a Community Advocate .",
-                  ]}
-                  typeSpeed={30}
-                  backSpeed={60}
-                  loop
-               />
-
-            </div>
-
+            <a href="#contact">
             <button className='contactBtn'>Contact me!</button>
+            </a>
 
          </div>
 
