@@ -9,7 +9,7 @@
         .left {
             .logo {
                 span {
-                    color: crimson;
+                    color: #4b1313;
                 }
             }
 
@@ -18,7 +18,7 @@
                 .menu-icon {
                     span {
 
-                        background-color: crimson;
+                        background-color: #4b1313;
                     }
 
                     &.active {
@@ -67,10 +67,10 @@
                 }
 
                 .navBtn {
-                    color: crimson;
-                    border: 1px solid crimson;
+                    color: #4b1313;
+                    border: 1px solid #4b1313;
                     @include tablet{
-                        color: $dimColor;
+                        color: #4b1313;
                         border: 1px solid $dimColor;
                     }
                 }
