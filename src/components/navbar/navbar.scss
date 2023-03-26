@@ -12,8 +12,13 @@
     @include large {
         padding: 10px 30px;
     }
-
+    @include tablet {
+    }
     @include mobile {
+        padding: 0px 10px;
+    }
+
+    @include phone {
         padding: 0px 10px;
     }
 
@@ -83,7 +88,7 @@
                             border-radius: 3px;
                             transform-origin: left;
                             transition: all 0.5s ease;
-                            background-color: $highlight;
+                            background-color: $darkHighlight;
                         }
 
                         &.active {

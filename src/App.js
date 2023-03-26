@@ -1,12 +1,13 @@
 import './app.scss';
 import './style/light.scss';
-import Navbar from '../src/components/navbar/Navbar';
 import Intro from './components/intro/Intro';
 import About from './components/aboutme/About';
-import Portfolio from './components/myprojects/Portfolio';
 import Contact from './components/contact/Contact';
+import Navbar from '../src/components/navbar/Navbar';
+import Portfolio from './components/myprojects/Portfolio';
 import { useContext } from 'react';
 import { DarkModeContext } from './context/darkModeContext';
+
 
 
 function App() {
@@ -15,13 +16,13 @@ function App() {
 
 
     return (
-        <div  className={darkMode ? "app" : "app light"}>
+        <div  className={darkMode ? "app light" : "app"}>
             <Navbar />
             <div className='container' id="container">
                 <Intro />
                 <About />
                 <Portfolio />
-                <Contact fffff/>
+                <Contact/>
             </div>
         </div>
     );

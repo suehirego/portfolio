@@ -6,6 +6,11 @@
     padding: 0px 60px;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    margin: 40px 0px;
+    height: calc(100vh - 70px);
+    scroll-snap-align: start;
+
 
     @include large {
         padding: 0px 40px;

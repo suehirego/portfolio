@@ -37,19 +37,18 @@ const Intro = () => {
 
             <p>Hello,my name is  </p>
             <h1>Susan Hirego,</h1>
-            <h2>Web Developer.</h2>
-
+            <h2>I am a Full-Stack Software Developer.</h2>
 
             <div className="bottom">
 
-               <span>Offline; I'm a</span>
+               <span>When offline; </span>
                <Typed
                   className="typedText"
                   strings={[
-                     "Girl Mom,",
-                     "Book Collector,",
-                     "Travel Enthusiast,",
-                     "Community Advocate .",
+                     "I'm a Girl Mom,",
+                     " a Book Collector,",
+                     "a Travel Enthusiast,",
+                     "and a Community Advocate .",
                   ]}
                   typeSpeed={30}
                   backSpeed={60}

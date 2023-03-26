@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './contact.scss';
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import { FiGithub } from 'react-icons/fi';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { RxTwitterLogo } from 'react-icons/rx';
@@ -8,21 +8,31 @@ import { FaRegCopyright } from 'react-icons/fa';
 
 const Contact = () => {
 
+    const form = useRef();
     const [message, setMessage] = useState(false);
+    const SERID = process.env.REACT_APP_YOUR_SERVICE_ID;
+    const TEMPID = process.env.REACT_APP_YOUR_TEMPLATE_ID;
+    const KEY = process.env.REACT_APP_YOUR_PUBLIC_KEY;
 
-    function sendEmail(e) {
 
+    const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_8i9oycr', 'template_egrpddf', e.target, 'user_lhHJ8CQU2Aii1SNDjHIOr')
-            .then((result) => {
-                console.log(result.text);
-                setMessage(true);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset();
-    }
+    
+        emailjs.sendForm(
+            'service_esrwo4t', 
+            'template_egrpddf', 
+            form.current, 
+            'user_lhHJ8CQU2Aii1SNDjHIOr'
+        )
+        .then((result) => {
+            console.log(result.text);
+            setMessage('Thanks, I will reply ASAP!');
+            e.target.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+    
 
 
     return (
@@ -60,11 +70,11 @@ const Contact = () => {
                     <hr />
                 </div>
 
-                <form onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail}>
 
                     <div className="formSec1">
 
-                        <input type="text" name="name" placeholder='Full Name' />
+                        <input type="text" name="user_name" placeholder='Full Name' />
                         <input type="email" name="user_email" placeholder='Email' />
 
                     </div>

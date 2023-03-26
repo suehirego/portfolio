@@ -25,16 +25,16 @@
         scrollbar-width: none; //4firefox
         font-family: 'Roboto', sans-serif;
 
-        >* {
-            width: 100vw;
-            margin: 40px 0px;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
+        // >* {
+            // width: 100vw;
+            // margin: 40px 0px;
+            // height: calc(100vh - 70px);
+            // scroll-snap-align: start;
 
-            @include mobile{
-                scroll-snap-type:none;
-            }
-        } 
+        //     @include mobile{
+        //         scroll-snap-type:none;
+        //     }
+        // } 
     }
 
     @include phone{

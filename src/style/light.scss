@@ -211,6 +211,9 @@
                 h1 {
                     color: $lightTextColor;
                 }
+                h2 {
+                    color: $lightTextColor;
+                }
 
                 hr {
                     height: 0.5px;
@@ -233,14 +236,36 @@
                 .wrapper {
                     .item {
                         color: crimson;
-                        border: 0.2px solid rgba(220, 20, 60, 0.2);
-
-                        h3 {
-                            color: $lightTextColor;
+                        border: none;
+                        img {
+                            
+                            opacity: 0.9;
+                    
+                        }
+    
+                        &:hover {
+                            background-color: rgba(220, 20, 60, 0.04);
                         }
 
-                        &:hover {
-                            background-color: rgba(220, 20, 60, 0.2);
+                        .details {
+                            color: $mainDark;
+                            // background-color: rgba(220, 20, 60, 0.08);
+                            background-color: rgba(241,121,124, 0.2);
+    
+                            h3 {
+                                color: $lightTextColor;
+                            }
+                            span {
+                                color: crimson;
+                            }
+    
+                            .buttons {
+    
+                                button {
+                                    background-color: $dimColor;
+                                }
+    
+                            }
                         }
                     }
                 }
@@ -248,13 +273,6 @@
             }
         }
 
-    }
-
-    .portfolioList {
-        &.active {
-            background-color: $lightTextColor;
-            color: white;
-        }
     }
 
     /////CONTACT
@@ -301,7 +319,7 @@
                     input:-webkit-autofill:focus,
                     input:-webkit-autofill:active {
                         -webkit-text-fill-color: $lightTextColor;
-                        -webkit-box-shadow: 0 0 0 30px $lightTextColor inset !important;
+                        -webkit-box-shadow: 0 0 0 30px $lightBackground inset !important;
                     }
                 }
 

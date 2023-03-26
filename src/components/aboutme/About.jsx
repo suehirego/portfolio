@@ -18,7 +18,7 @@ const About = () => {
             </a>
 
             <a
-               href="https://www.linkedin.com/in/susan-hirego-50b641174/"
+               href="https://www.linkedin.com/in/susanhirego/"
                target="_blank" rel="noopener noreferrer"
             >
                <SlSocialLinkedin className="headerIcon" />

@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import './navbar.scss';
 import { FaRegMoon } from "react-icons/fa";
 import { HiSun } from "react-icons/hi";
-import Pdf from '../../Documents/Document.pdf';
+import Pdf from '../../Documents/Resume.pdf';
 import { DarkModeContext } from '../../context/darkModeContext';
 
 
@@ -74,7 +74,7 @@ const Navbar = () => {
                         }
                         onClick={closeMobileMenu}
                      >
-                        Portfolio
+                        Projects
                      </a>
                   </li>
 

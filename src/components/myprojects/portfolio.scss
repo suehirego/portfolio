@@ -1,9 +1,38 @@
 @import "../../global.scss";
 
 .portfolio {
-    gap: 15px;
+    width: 100vw;
     display: flex;
-    padding: 0px 60px;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+
+    @include large {
+        gap: 20px;
+        padding: 0px 40px;
+    }
+
+    @include mobile {
+        padding: 0px 10px;
+    }
+
+    @include phone {
+        padding: 80px 0px;
+    }
+
+
+}
+
+
+//FEATURED
+.featured {
+    gap: 15px;
+    width: 100vw;
+    display: flex;
+    margin: 10px 0px;
+    padding: 0px 30px;
     align-items: center;
     justify-content: center;
 
@@ -13,17 +42,16 @@
     }
 
     @include tablet {
-        padding: 0px 20px;
+        gap: 20px;
+        padding: 0px 40px;
     }
 
     @include mobile {
-        min-height: 200vh;
-        padding: 0px 25px;
+        padding: 0px 10px;
     }
 
     @include phone {
-        min-height: 180vh;
-        padding: 0px 25px;
+        padding: 0px 0px;
     }
 
 
@@ -54,16 +82,15 @@
 
     .right {
         flex: 8;
-        gap: 30px;
+        gap: 20px;
         display: flex;
-        padding: 0 114px;
+        padding: 0 80px;
         flex-direction: column;
 
         @include large {
             gap: 20px;
             padding: 0px 20px;
         }
-
 
         .top {
             gap: 5px;
@@ -78,6 +105,16 @@
 
                 @include large {
                     font-size: 25px;
+                }
+            }
+
+            h2 {
+                font-size: 25px;
+                letter-spacing: 0.5px;
+                color: $dimColor;
+
+                @include large {
+                    font-size: 20px;
                 }
             }
 
@@ -104,127 +141,119 @@
                 gap: 20px;
             }
 
-
-            ul {
-                padding: 0;
-                list-style: none;
-                display: flex;
-
-                @include mobile {
-                    gap: 20px;
-                    align-items: center;
-                    text-align: center;
-                }
-
-
-                li {
-                    font-size: 15px;
-                    margin-right: 50px;
-                    padding: 7px;
-                    cursor: pointer;
-                    color: $dimColor;
-
-                    @include mobile {
-                        font-size: 13px;
-                        margin-right: 0px;
-                    }
-
-                    &.active {
-                        padding: 10px 15px;
-                        display: flex;
-                        color: $mainDark;
-                        border-radius: 20px;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: $darkHighlight;
-                    }
-                }
-            }
-
             .wrapper {
-                display: flex;
+                gap: 40px;
+                display: grid;
                 align-items: center;
                 justify-content: center;
-                display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-gap: 10px;
 
                 @include large {
-                    grid-gap: 5px;
+                    gap: 20px;
                 }
 
-                @include mobile {
-                    grid-gap: 20px;
-                    margin-top: 10px;
+                @include tablet {
+                    gap: 60px;
                     grid-template-columns: repeat(1, 1fr);
                 }
 
+                @include mobile {}
+
                 .item {
-                    width: 400px;
-                    height: 200px;
+                    flex: 1;
                     display: flex;
                     cursor: pointer;
-                    margin: 5px 10px;
-                    position: relative;
                     border-radius: 10px;
                     align-items: center;
                     color: $darkHighlight;
                     justify-content: center;
                     transition: all .5s ease;
-                    border: 0.2px solid $darkHighlight;
-
-                    @include large {
-                        width: 360px;
-                        height: 180px;
-                        margin: 5px;
-                    }
-
-                    @include tablet {
-                        width: 290px;
-                        height: 190px;
-                        margin: 5px;
-                    }
-
-                    @include mobile {
-                        width: 335px;
-                        height: 250px;
-                    }
-
-                    @include phone {
-                        width: 320px;
-                        height: 250px;
-                    }
-
-
-                    h3 {
-                        color: $mainDark;
-                        font-size: 20px;
-                        position: absolute;
-
-                        @include mobile {
-                            font-size: 16px;
-                        }
-                    }
+                    flex-direction: column;
+                    border: 0.2px solid #112240;
 
                     img {
                         width: 100%;
-                        height: 100%;
+                        height: 275px;
                         z-index: 1;
-                        object-fit: cover;
+                        opacity: 0.75;
+                        @include large {
+                            height: 205px;
+                        }
+
+                        @include tablet {
+                            height: 300px;
+                        }
+
+                        @include mobile {
+                            height: 240px;
+                        }
 
                         @include phone {
-                            border-radius: 10px;
+                            height: 200px;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
                         }
                     }
 
-                    &:hover {
-                        background-color: $darkHighlight;
 
-                        img {
-                            opacity: 0.2;
-                            z-index: 0;
+                    .details {
+                        gap: 10px;
+                        display: flex;
+                        padding: 20px 30px;
+                        align-items: center;
+                        text-align: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: $dimColor;
+                        background-color: #112240;
+
+                        h3 {
+                            color: $dimColor;
+                            font-size: 20px;
+                            @include mobile {
+                                font-size: 16px;
+                            }
+                        }
+
+                        p {
+                            font-size: 12px;
+                            letter-spacing: 0.5px;
+                        }
+
+                        span {
+                            word-spacing: 10px;
+                            font-size: 12px;
+                            margin-top: 5px;
+                            color: $darkHighlight;
+                        }
+
+                        .buttons {
+                            width: 100%;
+                            display: flex;
+                            margin-top: 20px;
+                            padding: 0px 30px;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            @include phone {
+                                a {
+                                    color: inherit;
+                                    text-decoration: none;
+                                }
+
+                            }
+
+                            button {
+                                width: 100px;
+                                border: none;
+                                padding: 5px;
+                                border-radius: 5px;
+                                background-color: $dimColor;
+                            }
+
                         }
                     }
+
                 }
             }
 
@@ -232,15 +261,5 @@
     }
 }
 
-.portfolioList {
-    font-size: 14px;
-    margin-right: 50px;
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
 
-    &.active {
-        background-color: $mainColor;
-        color: white;
-    }
-}
+

@@ -7,17 +7,23 @@
     padding: 0px 60px;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    margin: 40px 0px;
+    height: calc(100vh - 70px);
+    scroll-snap-align: start;
+
     @include large{
         gap: 20px;
         padding: 0px 40px;
     }
     @include tablet{
-        min-height: 130vh;
+        min-height: 145vh;
     }
     @include mobile{
-        min-height: 150vh;
+        min-height: 160vh;
         padding: 0px 25px;
     }
+   
    
     .left{
         flex: 0.4;
