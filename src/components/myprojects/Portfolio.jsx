@@ -55,15 +55,12 @@ const Portfolio = () => {
                                     <div className="details">
                                         <h3>{data.title}</h3>
                                         <p>{data.desc}</p>
-                                        <span>{data.tech}</span>
+                                        {/* <span>{data.tech}</span> */}
 
                                         <div className="buttons">
                                             <a href={data.link} rel="noreferrer" target="_blank">
                                                 <button className='button1'>Live Site</button>
                                             </a>
-                                            {/* <a href={data.github} rel="noreferrer" target="_blank">
-                                                <button>Github</button>
-                                            </a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -88,9 +85,6 @@ export default Portfolio
 
 
 
-
-
-
 // import React from 'react';
 // import { firstData } from '../../dummyData';
 // import './portfolio.scss';
@@ -105,71 +99,75 @@ export default Portfolio
 //     return (
 //         <div className="portfolio" id="portfolio">
 
-//             <div className="left">
+//             <div className="featured">
+//                 <div className="left">
 
-//                 <a
-//                     href="https://github.com/suehirego"
-//                     target="_blank" rel="noopener noreferrer"
-//                 >
-//                     <FiGithub className="headerIcon" />
-//                 </a>
+//                     <a
+//                         href="https://github.com/suehirego"
+//                         target="_blank" rel="noopener noreferrer"
+//                     >
+//                         <FiGithub className="headerIcon" />
+//                     </a>
 
-//                 <a
-//                     href="https://www.linkedin.com/in/susan-hirego-50b641174/"
-//                     target="_blank" rel="noopener noreferrer"
-//                 >
-//                     <SlSocialLinkedin className="headerIcon" />
-//                 </a>
+//                     <a
+//                         href="https://www.linkedin.com/in/susan-hirego-50b641174/"
+//                         target="_blank" rel="noopener noreferrer"
+//                     >
+//                         <SlSocialLinkedin className="headerIcon" />
+//                     </a>
 
-//                 <a
-//                     href="https://twitter.com/susanhirego"
-//                     target="_blank" rel="noopener noreferrer"
-//                 >
-//                     <RxTwitterLogo className="headerIcon" />
-//                 </a>
+//                     <a
+//                         href="https://twitter.com/susanhirego"
+//                         target="_blank" rel="noopener noreferrer"
+//                     >
+//                         <RxTwitterLogo className="headerIcon" />
+//                     </a>
 
-//             </div>
-
-//             <div className="right">
-//                 <div className="top">
-//                 <h1>Projects</h1>
-//                     <hr />
 //                 </div>
 
-//                 <div className="bottom">
+//                 <div className="right">
+//                     <div className="top">
+//                         <h1>Main MVP</h1>
+//                         <hr />
+//                     </div>
 
-//                     <div className="wrapper">
-//                         {firstData.map((data) => (
-//                             <div className="item">
+//                     <div className="bottom">
 
-//                                 <img src={data.img} alt="" />
+//                         <div className="wrapper">
+//                             {firstData.map((data) => (
+//                                 <div className="item">
 
-//                                 <div className="details">
-//                                     <h3>{data.title}</h3>
-//                                     <p>{data.desc}</p>
-//                                     <span>{data.tech}</span>
+//                                     <img src={data.img} alt="" />
 
-//                                     <div className="buttons">
-//                                         <a href={data.link} rel="noreferrer" target="_blank">
-//                                             <button>Live Site</button>
-//                                         </a>
-//                                         <a href={data.link} rel="noreferrer" target="_blank">
-//                                             <button>Github</button>
-//                                         </a>
+//                                     <div className="details">
+//                                         <h3>{data.title}</h3>
+//                                         <p>{data.desc}</p>
+//                                         <span>{data.tech}</span>
+
+//                                         <div className="buttons">
+//                                             <a href={data.link} rel="noreferrer" target="_blank">
+//                                                 <button className='button1'>Live Site</button>
+//                                             </a>
+//                                             {/* <a href={data.github} rel="noreferrer" target="_blank">
+//                                                 <button>Github</button>
+//                                             </a> */}
+//                                         </div>
 //                                     </div>
 //                                 </div>
-//                             </div>
-//                         ))}
+//                             ))}
+//                         </div>
 //                     </div>
 //                 </div>
 //             </div>
 
-//             <Portfolio2/>
-//             <Portfolio3/>
+//             <Portfolio2 />
+//             <Portfolio3 />
 //         </div>
 //     );
 
 // }
 
 // export default Portfolio
+
+
 

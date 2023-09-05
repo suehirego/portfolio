@@ -139,12 +139,9 @@
             .wrapper {
                 gap: 40px;
                 display: flex;
-                // height: calc(100vh - 70px);
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 30px;
-                // grid-template-columns: repeat(2, 1fr);
-
 
                 @include large {
                     gap: 20px;
@@ -174,7 +171,7 @@
                         width: 100%;
                         height: 275px;
                         z-index: 1;
-                        opacity: 0.75;
+                        // opacity: 0.75;
                         @include large {
                             height: 205px;
                         }
@@ -249,24 +246,36 @@
                             .button {
                                 width: 100px;
                                 border: none;
-                                padding: 5px;
+                                padding: 10px;
                                 color: $mainDark;
                                 border-radius: 3px;
                                 background-color: $dimColor;
                             }
+                            .button:hover{
+                                color: $mainDark;
+                                background-color: $darkHighlight;
+                            }
                             .button1 {
                                 width: 150px;
                                 border: none;
-                                padding: 5px;
+                                padding: 10px;
                                 color: $mainDark;
                                 border-radius: 3px;
                                 background-color: $dimColor;
+                            }
+                            .button1:hover{
+                                color: $mainDark;
+                                background-color: $darkHighlight;
                             }
 
                         }
                     }
 
                 }
+
+                // .item:hover img {
+                //     transform: translateY(-100%);
+                // }
             }
 
         }

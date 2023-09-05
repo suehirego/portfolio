@@ -62,7 +62,7 @@ const Contact = () => {
 
             <div className="right">
                 <div className="top">
-                    <h1>Contact Me</h1>
+                    <h1>Let's Connect</h1>
                     <hr />
                 </div>
 

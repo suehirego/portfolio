@@ -53,7 +53,7 @@ const Portfolio3 = () => {
                                 <div className="details">
                                     <h3>{data.title}</h3>
                                     <p>{data.desc}</p>
-                                    <span>{data.tech}</span>
+                                    {/* <span>{data.tech}</span> */}
 
                                     <div className="buttons">
                                         <a href={data.link} rel="noopener" target="_blank">

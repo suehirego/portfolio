@@ -36,7 +36,7 @@
 
         a{
             color: inherit;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
 
             .headerIcon{
                 font-size: 20px;
@@ -71,7 +71,7 @@
         }
     
         h1{
-             font-size: 50px;
+             font-size: 55px;
             color: $mainColor;
             @include large{
                 font-size: 65px;
@@ -96,7 +96,7 @@
         //     }
         // }
         h2{
-            font-size: 40px;
+            font-size: 42px;
             color: $dimTextColor;
             letter-spacing: 0.5px;
             @include large{
