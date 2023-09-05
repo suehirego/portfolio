@@ -29,7 +29,7 @@ export const  secondData = [
         img: "assets/buaca.png",
         link: "https://buaca-tech.com/",
         // github: "https://github.com/suehirego/ecom-app",
-        desc: "Buaca Tech is an education bootcamp with a mission to be the leading ICT transformation pillar in Africa. Courses include Computer Basics, Web Development and Computer Networking both online and inperson ",
+        desc: "Buaca Tech is a bootcamp with a mission to be the leading ICT transformation pillar in Africa. Courses include Computer Basics, Web Development and Computer Networking both online and inperson ",
         tech: "React Express JavaScript Sass"
     },
     {
