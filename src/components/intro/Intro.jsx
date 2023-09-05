@@ -37,7 +37,7 @@ const Intro = () => {
 
             <p>Hello,my name is  </p>
             <h1>Susan Hirego,</h1>
-            <h2>I am a Full-Stack Software Developer.</h2>
+            <h2>I am a full-stack software developer.</h2>
 
             <a href="#contact">
             <button className='contactBtn'>Contact me!</button>

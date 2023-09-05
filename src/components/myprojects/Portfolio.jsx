@@ -40,7 +40,7 @@ const Portfolio = () => {
 
                 <div className="right">
                     <div className="top">
-                        <h1>Projects</h1>
+                        <h1>Main MVP</h1>
                         <hr />
                     </div>
 
@@ -59,11 +59,11 @@ const Portfolio = () => {
 
                                         <div className="buttons">
                                             <a href={data.link} rel="noreferrer" target="_blank">
-                                                <button>Live Site</button>
+                                                <button className='button1'>Live Site</button>
                                             </a>
-                                            <a href={data.github} rel="noreferrer" target="_blank">
+                                            {/* <a href={data.github} rel="noreferrer" target="_blank">
                                                 <button>Github</button>
-                                            </a>
+                                            </a> */}
                                         </div>
                                     </div>
                                 </div>

@@ -57,11 +57,14 @@ const Portfolio2 = () => {
 
                                     <div className="buttons">
                                         <a href={data.link} rel="noopener" target="_blank">
-                                            <button>Live Site</button>
+                                            <button className='button'>Live Site</button>
                                         </a>
-                                        <a href={data.github} rel="noopener" target="_blank">
-                                            <button>Github</button>
-                                        </a>
+                                        {data.github ?
+                                            <a href={data.github} rel="noopener" target="_blank">
+                                                <button className='button'>Github</button>
+                                            </a>
+                                            : ""
+                                        }
                                     </div>
                                 </div>
                             </div>

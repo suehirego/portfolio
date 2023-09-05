@@ -70,7 +70,7 @@
         .top {
 
             h1 {
-                font-size: 35px;
+                font-size: 20px;
                 letter-spacing: 0.5px;
                 color: $dimColor;
 
@@ -81,8 +81,7 @@
 
             hr {
                 border: none;
-                height: 1px;
-                background-color: #333;
+                border: 0.3px solid rgba(85, 85, 85, 0.7);
             }
         }
 
@@ -189,8 +188,7 @@
 
             hr {
                 border: none;
-                height: 1px;
-                background-color: #333;
+                border: 0.3px solid rgba(85, 85, 85, 0.7);
             }
 
             span {

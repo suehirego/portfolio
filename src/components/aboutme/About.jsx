@@ -60,7 +60,7 @@ const About = () => {
                   </div>
 
                   <div className="leftText">
-                     <span> Today, I am focusing on a new career path in Software Engineering and I have
+                     <span> Today, I am focusing on a career path in Software Engineering and I have
                         built some amazing products with the following technologies:</span>
                      <div className="leftTextList">
                         <ul>

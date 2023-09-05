@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import { frontData } from '../../dummyData';
+import { thirdData } from '../../dummyData';
 import './portfolio.scss';
 import { FiGithub } from 'react-icons/fi';
 import { SlSocialLinkedin } from 'react-icons/sl';
@@ -37,15 +37,15 @@ const Portfolio3 = () => {
             </div>
 
             <div className="right">
-                <div className="top">
+                {/* <div className="top">
                     <h2>Featured Projects</h2>
                     <hr />
-                </div>
+                </div> */}
 
                 <div className="bottom">
 
                     <div className="wrapper">
-                        {frontData.map((data) => (
+                        {thirdData.map((data) => (
                             <div className="item">
 
                                 <img src={data.img} alt="" />
@@ -57,11 +57,14 @@ const Portfolio3 = () => {
 
                                     <div className="buttons">
                                         <a href={data.link} rel="noopener" target="_blank">
-                                            <button>Live Site</button>
+                                            <button className='button'>Live Site</button>
                                         </a>
-                                        <a href={data.github} rel="noopener" target="_blank">
-                                            <button>Github</button>
-                                        </a>
+                                        {data.github ?
+                                            <a href={data.github} rel="noopener" target="_blank">
+                                                <button className='button'>Github</button>
+                                            </a>
+                                            : ""
+                                        }
                                     </div>
                                 </div>
                             </div>

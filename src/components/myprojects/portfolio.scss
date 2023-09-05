@@ -99,19 +99,15 @@
             flex-direction: column;
 
             h1 {
-                font-size: 35px;
+                font-size: 20px;
                 letter-spacing: 0.5px;
-                color: $dimColor;
-
-                @include large {
-                    font-size: 25px;
-                }
+                color: $mainColor;
             }
 
             h2 {
-                font-size: 25px;
+                font-size: 20px;
                 letter-spacing: 0.5px;
-                color: $dimColor;
+                color: $mainColor;
 
                 @include large {
                     font-size: 20px;
@@ -120,8 +116,7 @@
 
             hr {
                 border: none;
-                height: 1px;
-                background-color: #333;
+                border: 0.3px solid rgba(85, 85, 85, 0.7);
             }
 
         }
@@ -143,10 +138,13 @@
 
             .wrapper {
                 gap: 40px;
-                display: grid;
+                display: flex;
+                // height: calc(100vh - 70px);
                 align-items: center;
                 justify-content: center;
-                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 30px;
+                // grid-template-columns: repeat(2, 1fr);
+
 
                 @include large {
                     gap: 20px;
@@ -154,7 +152,8 @@
 
                 @include tablet {
                     gap: 60px;
-                    grid-template-columns: repeat(1, 1fr);
+                    flex-direction: column;
+                    // grid-template-columns: repeat(1, 1fr);
                 }
 
                 @include mobile {}
@@ -169,7 +168,7 @@
                     justify-content: center;
                     transition: all .5s ease;
                     flex-direction: column;
-                    border: 0.2px solid #112240;
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 
                     img {
                         width: 100%;
@@ -206,17 +205,20 @@
                         justify-content: center;
                         color: $dimColor;
                         background-color: #112240;
+                        background-color: $mainBlackLight;
 
                         h3 {
                             color: $dimColor;
-                            font-size: 20px;
+                            font-size: 16px;
+                            font-weight: 400;
                             @include mobile {
                                 font-size: 16px;
                             }
                         }
 
                         p {
-                            font-size: 12px;
+                            font-size: 13px;
+                            font-weight: 300;
                             letter-spacing: 0.5px;
                         }
 
@@ -228,12 +230,13 @@
                         }
 
                         .buttons {
+                            gap: 10px;
                             width: 100%;
                             display: flex;
                             margin-top: 20px;
                             padding: 0px 30px;
                             align-items: center;
-                            justify-content: space-between;
+                            justify-content: center;
 
                             @include phone {
                                 a {
@@ -243,11 +246,20 @@
 
                             }
 
-                            button {
+                            .button {
                                 width: 100px;
                                 border: none;
                                 padding: 5px;
-                                border-radius: 5px;
+                                color: $mainDark;
+                                border-radius: 3px;
+                                background-color: $dimColor;
+                            }
+                            .button1 {
+                                width: 150px;
+                                border: none;
+                                padding: 5px;
+                                color: $mainDark;
+                                border-radius: 3px;
                                 background-color: $dimColor;
                             }
 

@@ -71,7 +71,7 @@
         }
     
         h1{
-             font-size: 75px;
+             font-size: 50px;
             color: $mainColor;
             @include large{
                 font-size: 65px;
@@ -96,7 +96,7 @@
         //     }
         // }
         h2{
-            font-size: 50px;
+            font-size: 40px;
             color: $dimTextColor;
             letter-spacing: 0.5px;
             @include large{
