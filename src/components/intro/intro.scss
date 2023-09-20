@@ -10,6 +10,7 @@
     margin: 40px 0px;
     height: calc(100vh - 70px);
     scroll-snap-align: start;
+
     @include large{
         padding: 0px 40px;
     }
@@ -30,6 +31,8 @@
         align-items: center;
         flex-direction: column;
         justify-content: flex-end;
+        margin-bottom: 70px;
+
         @include tablet{
             display: none;
         }

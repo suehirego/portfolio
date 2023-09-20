@@ -6,7 +6,7 @@ export const firstData = [
         img: "assets/agency.png",
         link: "https://rego-now.com",
         github: "https://github.com/suehirego/mvp",
-        desc: 'This was my MVP from CodeOp. Regonow is a community for women’s savings groups that are committed to improving their living conditions by saving their money and taking up development projects together.',
+        desc: 'Regonow simplifies the way savings groups keep and monitor their funds by automating saving.This was my MVP upon graduation from CodeOp. It is an original idea that I have built from the ground up.',
         tech: "React JavaScript SASS HTML5"
     },
     {

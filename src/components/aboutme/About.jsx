@@ -85,15 +85,15 @@ const About = () => {
                         <ul>
                            <li>
                               <TbArrowBadgeRight className='icon' />
-                              CSS
+                              CSS & SASS
                            </li>
                            <li>
                               <TbArrowBadgeRight className='icon' />
-                              SASS
+                              MYSQL
                            </li>
                            <li>
                               <TbArrowBadgeRight className='icon' />
-                              Tailwind CSS
+                              MONGO DB
                            </li>
                            <li>
                               <TbArrowBadgeRight className='icon' />
