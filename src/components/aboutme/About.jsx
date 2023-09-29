@@ -50,7 +50,7 @@ const About = () => {
                         Organisation. With limited resources,
                         free and open source platforms were the only option I had to put up a website for</span>
                      <a href="https://regofoundation.org/" target="_blank" rel="noreferrer" >my Organisation.</a> */}
-                     <span>I started out  with Project Management in a community-based nonprofit organization where I picked up 
+                     <span>I started out  as a Project Manager in a community-based nonprofit organization where I picked up 
                         lots of teamwork, communication, problem-solving and project evaluation skills until I 
                         transitioned into Tech 3 years ago through <a href="https://codeop.tech/" target="_blank" rel="noreferrer" >CodeOp.</a>
                      </span>
