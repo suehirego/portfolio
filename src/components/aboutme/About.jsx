@@ -45,23 +45,30 @@ const About = () => {
                <div className="left">
 
                   <div className="leftText">
-                     <span> I'm a MERN stack Web Developer based in Uganda.
+                     {/* <span> I'm a MERN stack Web Developer based in Uganda.
                          My interest in web development started back in 2016 when I founded a non-profit
                         Organisation. With limited resources,
                         free and open source platforms were the only option I had to put up a website for</span>
-                     <a href="https://regofoundation.org/" target="_blank" rel="noreferrer" >my Organisation.</a>
+                     <a href="https://regofoundation.org/" target="_blank" rel="noreferrer" >my Organisation.</a> */}
+                     <span>I started out  with Project Management in a community-based nonprofit organization where I picked up 
+                        lots of teamwork, communication, problem-solving and project evaluation skills until I 
+                        transitioned into Tech 3 years ago through <a href="https://codeop.tech/" target="_blank" rel="noreferrer" >CodeOp.</a>
+                     </span>
                   </div>
 
-                  <div className="leftText">
-                     <span>In a couple of days, I had a website up and running, this elevated my curiosity 
+                  {/* <div className="leftText"> */}
+                     {/* <span>In a couple of days, I had a website up and running, this elevated my curiosity 
                         to learn and through my networks, I landed a full-stack web
                         development scholarship at</span>
-                     <a href="https://codeop.tech/" target="_blank" rel="noreferrer" >CodeOp.</a>
-                  </div>
+                     <a href="https://codeop.tech/" target="_blank" rel="noreferrer" >CodeOp.</a> */}
+                     
+                  {/* </div> */}
 
                   <div className="leftText">
-                     <span> Today, I am focusing on a career path in Software Engineering and I have
-                        built some amazing products with the following technologies:</span>
+                  <span>Today, I am focusing on a career path in Software Engineering where I specialise in MERN stack development
+                        to build impactful products for companies and budding entrepreneurs. 
+                        I have built some amazing products with the following technologies:
+                     </span>
                      <div className="leftTextList">
                         <ul>
                            <li>
